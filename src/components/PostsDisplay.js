@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Post from './Post';
+import './PostsDisplay.css';
 
 // airtable configuration
 const Airtable = require('airtable');
@@ -56,20 +57,22 @@ const PostsDisplay = function () {
   }, [update, posts]);
 
   return (
-    <>
-      <div>
+    <div className="Content">
+      <div className="AddTweet">
         <input type="text" placeholder="Printer" value={printer} onChange={(e) => setPrinter(e.target.value)} />
-        <input type="text" placeholder="What's happening" value={print} onChange={(e) => setPrint(e.target.value)} />
+        <input className="ZoneTweet" type="text" placeholder="What's happening" value={print} onChange={(e) => setPrint(e.target.value)} />
         <button type="button" onClick={handleSubmit}>Print</button>
       </div>
-      {posts.map((post) => (
-        <Post
-          key={post.id}
-          author={post.fields.Author}
-          body={post.fields.Body}
-        />
-      ))}
-    </>
+      <div className="ContainerTweet">
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            author={post.fields.Author}
+            body={post.fields.Body}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,27 @@
+.Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AddTweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 16px 0px;
+}
+
+.ZoneTweet {
+    height: 142px;
+    top: 88px;
+    background: #FFFFFF;
+}
+
+.ContainerTweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background: #FFFFFF;
+}

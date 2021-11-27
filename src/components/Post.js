@@ -1,20 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Post.css';
 
 const Post = function ({ author, body }) {
   return (
-    <>
-      <div>
-        Author:
-        {' '}
+    <div className="Tweet">
+      <div className="Printer">
         {author}
       </div>
-      <div>
-        Body:
-        {' '}
+      <div className="Print">
         {body}
       </div>
-    </>
+    </div>
   );
 };
 

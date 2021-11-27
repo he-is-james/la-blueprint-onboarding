@@ -1,0 +1,35 @@
+.Tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    margin: 16px 0px;    
+}
+
+.Printer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.Print {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* or 147% */
+
+
+    /* Gray 1 */
+
+    color: #333333;
+}
